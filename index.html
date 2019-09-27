@@ -25,6 +25,10 @@
         <a href="#">
           <img class="logo" src="assets/media/logo.svg" alt="" />
         </a>
+        <label class="bar" for="toggle">
+          <i class="fa fa-bars"></i>
+        </label>
+        <input id="toggle" type="checkbox" />
         <ul class="flex nav-menu">
           <li class="nav-menu__item">
             <a href="#">Portfolio</a>
@@ -35,8 +39,18 @@
           <li class="nav-menu__item">
             <a href="#">Contact</a>
           </li>
-          <li class="nav-menu__item">
-            <a href="#">More</a>
+          <li class="nav-menu__item nav-menu__last-item">
+            <a href="#"
+              >More
+              <i class="fa fa-chevron-down"></i>
+            </a>
+            <ul class="sub-menu">
+              <div class="sub-menu__box">
+                <li><a href="#">AltCampus</a></li>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Program</a></li>
+              </div>
+            </ul>
           </li>
         </ul>
       </nav>
