@@ -5,120 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Web Design</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/stylesheet/style.css" />
-    <!-- Font Family -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap"
-      rel="stylesheet"
-    />
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/8bc5acd820.js"
       crossorigin="anonymous"
     ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/stylesheet/style.css" />
   </head>
   <body>
-    <!-- Header -->
+    <!-- header -->
     <header class="header">
-      <nav class="wrapper flex">
-        <a href="#">
-          <img class="logo" src="assets/media/logo.svg" alt="" />
-        </a>
-        <label class="bar" for="toggle">
-          <i class="fa fa-bars"></i>
+      <nav class="container flex">
+        <a class="logo" href="#"
+          ><img src="assets/media/logo.png" alt="AltCampus logo"
+        /></a>
+        <label class="hamburger" for="toggle">
+          &#9776;
         </label>
-        <input id="toggle" type="checkbox" />
-        <ul class="flex nav-menu">
-          <li class="nav-menu__item">
-            <a href="#">Portfolio</a>
-          </li>
-          <li class="nav-menu__item">
-            <a href="#">About</a>
-          </li>
-          <li class="nav-menu__item">
-            <a href="#">Contact</a>
-          </li>
-          <li class="nav-menu__item nav-menu__last-item">
-            <a href="#"
-              >More
-              <i class="fa fa-chevron-down"></i>
-            </a>
-            <ul class="sub-menu">
-              <div class="sub-menu__box">
-                <li><a href="#">AltCampus</a></li>
+        <input id="toggle" class="toggle" type="checkbox" name="" />
+        <ul class="nav-menu flex">
+          <li class="nav-menu__item"><a href="#">Portfolio</a></li>
+          <li class="nav-menu__item"><a href="#">About</a></li>
+          <li class="nav-menu__item"><a href="#">Contact</a></li>
+          <li class="nav-menu__item nav-sub-menu">
+            <a class="more" href="#">More <i class="fas fa-angle-down"></i></a>
+            <div class="sub-menu-box">
+              <ul class="sub-menu">
                 <li><a href="#">Google</a></li>
+                <li><a href="#">AltCampus</a></li>
                 <li><a href="#">Program</a></li>
-              </div>
-            </ul>
+              </ul>
+            </div>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="wrapper text-center">
+      <!-- hero -->
+      <section class="hero text-center">
+        <div class="container">
           <h1 class="hero-heading">
             Altcampus an <br />
-            alternative to college
+            alternative college
           </h1>
-          <p class="hero-para">
-            Web developer - Graphic artist - User experience designer
-          </p>
+          <h4 class="hero-sub-heading">
+            Web Developer - graphic artist - user experience desinger
+          </h4>
         </div>
       </section>
       <!-- Portfolio -->
-      <section class="portfolio padding">
-        <div class="wrapper">
+      <section class="padding portfolio">
+        <div class="container">
           <h2 class="heading">Portfolio</h2>
-          <div class="flex portfolio-container">
-            <div class="portfolio__item portfolio__item1 base100">
-              <img src="assets/media/01.jpeg" alt="" />
+          <div class="flex">
+            <div class="col col1 flex-basis">
+              <img class="img-responsive" src="assets/media/01.jpg" alt="" />
             </div>
-            <div class="portfolio__item portfolio__item2 base100">
-              <img src="assets/media/02.jpeg" alt="" />
+            <div class="col col2 flex-basis">
+              <img class="img-responsive" src="assets/media/02.jpg" alt="" />
             </div>
-            <div class="portfolio__item portfolio__item3 base100">
-              <img src="assets/media/03.jpeg" alt="" />
+            <div class="col col3 flex-basis">
+              <img class="img-responsive" src="assets/media/03.jpg" alt="" />
             </div>
-            <div class="portfolio__item portfolio__item4 base100">
-              <img src="assets/media/04.jpeg" alt="" />
+            <div class="col col4 flex-basis">
+              <img class="img-responsive" src="assets/media/04.jpg" alt="" />
             </div>
-            <div class="portfolio__item portfolio__item5 base100">
-              <img src="assets/media/05.jpeg" alt="" />
+            <div class="col col5 flex-basis">
+              <img class="img-responsive" src="assets/media/05.jpeg" alt="" />
             </div>
-            <div class="portfolio__item portfolio__item6 base100">
-              <img src="assets/media/06.jpeg" alt="" />
+            <div class="col col6 flex-basis">
+              <img class="img-responsive" src="assets/media/06.jpg" alt="" />
             </div>
           </div>
         </div>
       </section>
       <!-- About -->
-      <section class="about padding">
-        <div class="wrapper">
+      <section class="padding about">
+        <div class="container">
           <h2 class="heading">About</h2>
-          <div class="about-wrapper flex wrap">
-            <p class="about-text base100">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-              commodi veniam quam et? Iusto assumenda et obcaecati placeat
-              numquam nulla optio recusandae impedit quod, error tenetur
-              dolorem, deleniti, voluptate distinctio.
+          <div class="flex about-wrapper">
+            <p class="about-text flex-basis">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+              provident nesciunt qui ea consequatur aliquid, ad deleniti esse
+              expedita labore ullam aut pariatur repudiandae numquam? Magnam eos
+              numquam fuga sint. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quas, provident nesciunt qui ea consequatur
+              aliquid, ad deleniti esse expedita.
             </p>
-            <p class="about-text base100">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
-              harum, quo similique doloremque corrupti earum voluptates dolor!
-              Dolorem obcaecati iure quidem, excepturi quia tempora ipsam,
-              ratione reiciendis laborum voluptatum hic.
+            <p class="about-text flex-basis">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+              provident nesciunt qui ea consequatur aliquid, ad deleniti esse
+              expedita labore ullam aut pariatur repudiandae numquam? Magnam eos
+              numquam fuga sint. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quas, provident nesciunt qui ea consequatur
+              aliquid, ad deleniti esse expedita.
             </p>
+          </div>
+          <div class="text-center">
+            <button class="btn">apply</button>
           </div>
         </div>
       </section>
       <!-- Contact -->
       <section class="contact padding">
-        <div class="wrapper contact-wrapper">
+        <div class="container">
           <h2 class="heading">Contact me</h2>
-          <form action="">
+          <form class="contact-form" action="">
             <input
               class="form-control"
               name=""
@@ -129,29 +122,30 @@
               class="form-control"
               name=""
               type="email"
-              placeholder="Email Address"
+              placeholder="Email"
             />
             <input
               class="form-control"
               name=""
               type="number"
-              placeholder="phone Number"
+              placeholder="Phone Number"
             />
             <textarea
               class="form-control"
               name=""
+              id=""
               rows="5"
               placeholder="Message"
             ></textarea>
+            <input class="btn btn-primary" type="submit" value="Send" />
           </form>
-          <button class="btn">Send</button>
         </div>
       </section>
       <!-- Map -->
       <section class="padding map">
-        <div class="wrapper">
+        <div class="container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.8617260789183!2d76.35432851517388!3d32.20795638114761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus!5e0!3m2!1sen!2sin!4v1569499532978!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.8617260789183!2d76.35432851517388!3d32.20795638114761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus!5e0!3m2!1sen!2sin!4v1575530280412!5m2!1sen!2sin"
             width="100%"
             height="450"
             frameborder="0"
@@ -160,9 +154,9 @@
           ></iframe>
         </div>
       </section>
-      <!-- Table -->
+      <!-- Tablr -->
       <section class="padding">
-        <div class="wrapper">
+        <div class="container">
           <h2 class="heading">Table</h2>
           <table class="table">
             <thead>
@@ -177,74 +171,77 @@
               <tr>
                 <td>Google</td>
                 <td>9518</td>
-                <td>6369</td>
-                <td>6369</td>
+                <td>9518</td>
+                <td>9518</td>
               </tr>
               <tr>
-                <td>Twitter</td>
+                <td>Google</td>
                 <td>9518</td>
-                <td>6369</td>
-                <td>6369</td>
+                <td>9518</td>
+                <td>9518</td>
               </tr>
               <tr>
-                <td>Amazon</td>
+                <td>Google</td>
                 <td>9518</td>
-                <td>6369</td>
-                <td>6369</td>
+                <td>9518</td>
+                <td>9518</td>
               </tr>
               <tr>
-                <td>Linkedin</td>
+                <td>Google</td>
                 <td>9518</td>
-                <td>6369</td>
-                <td>6369</td>
+                <td>9518</td>
+                <td>9518</td>
               </tr>
               <tr>
-                <td>Codepen</td>
+                <td>Google</td>
                 <td>9518</td>
-                <td>6369</td>
-                <td>6369</td>
+                <td>9518</td>
+                <td>9518</td>
               </tr>
               <tr>
-                <td>Github</td>
+                <td>Google</td>
                 <td>9518</td>
-                <td>6369</td>
-                <td>6369</td>
+                <td>9518</td>
+                <td>9518</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
     </main>
-    <!-- Footer -->
     <footer class="footer text-center">
       <div class="padding">
-        <div class="wrapper">
-          <div class="flex wrap">
-            <div class="footer__item base100">
-              <h3 class="footer__heading">Location</h3>
-              <address>Vpo: Therh, Khaniyar <br />Dharmshala, 17218</address>
+        <div class="container flex">
+          <div class="col-1-3 flex-basis">
+            <h4>Location</h4>
+            <address>
+              Vpo: Ther,AltCampus, <br />
+              Dharamshala, 176218
+            </address>
+          </div>
+          <div class="col-1-3 flex-basis">
+            <h4>Around the web</h4>
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
             </div>
-            <div class="footer__item base100">
-              <h3 class="footer__heading">Around the web</h3>
-              <ul class="social">
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-google-plus"></i></li>
-                <li><i class="fab fa-linkedin"></i></li>
-                <li><i class="fab fa-dribbble"></i></li>
-              </ul>
-            </div>
-            <div class="footer__item base100">
-              <h3 class="footer__heading">About AltCampus</h3>
+          </div>
+          <div class="col-1-3 flex-basis">
+            <h4>About Altcampus</h4>
+            <div>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                accusantium <span class="last">AltCampus</span>.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                eius, exercitationem libero cumque voluptas
+                <a class="footer-link" href="#">AltCampus</a>
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="text-center copy">
+      <div class="copyright">
         <small>Copyright &copy; AltCampus</small>
       </div>
     </footer>
