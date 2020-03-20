@@ -146,6 +146,7 @@ body {
 .container {
   max-width: 1040px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 .wrapper {
   max-width: 768px;
@@ -162,12 +163,12 @@ body {
 }
 /* Padding */
 .padding {
-  padding: 80px 0;
+  padding: 5rem 0;
 }
 
 /* Heading */
 .heading {
-  font-size: 44px;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 700;
   color: #23313f;
@@ -177,9 +178,9 @@ body {
 
 /* Button */
 .btn {
-  padding: 12px 24px;
+  padding: 0.6rem 1.5rem;
   background-color: #ffffff;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-transform: capitalize;
   font-weight: 600;
   border: 1.5px solid #000000;
@@ -195,16 +196,16 @@ body {
 /* Header */
 .header {
   background-color: #23313f;
-  padding: 16px 0;
+  padding: 1rem 0;
 }
 .brand img {
-  width: 140px;
+  width: 9rem;
 }
 .nav-item {
-  margin-left: 32px;
+  margin-left: 2rem;
 }
 .nav-link {
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -217,7 +218,7 @@ body {
   position: relative;
 }
 .sub-menu-box {
-  padding-top: 40px;
+  padding-top: 2.5rem;
   position: absolute;
   display: none;
   left: 50%;
@@ -230,7 +231,7 @@ body {
 .sub-menu a {
   display: inline-block;
   color: #089790;
-  padding: 10px 30px;
+  padding: 0.6rem 2rem;
   text-decoration: none;
 }
 .nav-last-item:hover .sub-menu-box {
@@ -246,19 +247,19 @@ body {
 /* Hero */
 .hero {
   background: linear-gradient(#2b4a55, #4d9f7e);
-  padding: 100px 0;
+  padding: 6.2rem 0;
   text-align: center;
   color: #dddddd;
 }
 .hero-heading {
-  font-size: 64px;
+  font-size: 4rem;
   text-transform: uppercase;
   font-weight: 700;
 }
 .hero-subheading {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
-  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
 /* Portfolio */
@@ -266,8 +267,8 @@ body {
   width: 30%;
   font-size: 0;
   text-align: center;
-  padding: 40px 0;
-  margin: 16px 0;
+  padding: 2.6rem 0;
+  margin: 1rem 0;
 }
 .col-1 {
   background-color: #ba4c63;
@@ -288,8 +289,8 @@ body {
   background-color: #ccb1a3;
 }
 .col img {
-  width: 140px;
-  height: 140px;
+  width: 9.5rem;
+  height: 9.5rem;
   border-radius: 50%;
 }
 
@@ -302,7 +303,7 @@ body {
 }
 .about-col {
   width: 50%;
-  padding: 0 32px;
+  padding: 0 2rem;
 }
 
 /* Contact */
@@ -310,9 +311,9 @@ body {
   display: block;
   width: 100%;
   color: #4c555d;
-  padding: 12px 0;
-  font-size: 20px;
-  margin-bottom: 24px;
+  padding: 0.6rem 0;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
   border: 0;
   outline: 0;
   resize: none;
@@ -322,7 +323,7 @@ body {
   border: 0;
   background-color: #4d9f7e;
   color: #ffffff;
-  padding: 12px 32px;
+  padding: 0.7rem 2rem;
 }
 
 /* Map */
@@ -343,8 +344,8 @@ th {
 th,
 td {
   text-align: left;
-  padding: 8px 12px;
-  font-size: 20px;
+  padding: 0.5rem 0.8rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 tbody tr:nth-child(odd) {
@@ -366,25 +367,25 @@ td:first-child {
   align-items: flex-start;
 }
 .footer .col {
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 .footer-heading {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 .social-menu-item a {
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 36px;
-  height: 36px;
+  width: 2.3rem;
+  height: 2.3rem;
   border: 1px solid #ffffff;
   border-radius: 50%;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 .alt-link {
   text-decoration: none;
@@ -395,27 +396,17 @@ td:first-child {
 }
 .copyright {
   background-color: #19242e;
-  padding: 24px 0;
+  padding: 1.5rem 0;
 }
 
 @media all and (max-width: 768px) {
-  .container {
-    padding: 0 32px;
-  }
-  .heading {
-    font-size: 32px;
-    margin-bottom: 16px;
-  }
-  .padding {
-    padding: 40px 0;
+  html {
+    font-size: 10px;
   }
   /* Header */
   .brand {
     position: relative;
     z-index: 999;
-  }
-  .brand img {
-    width: 80px;
   }
   .nav-menu {
     display: none;
@@ -429,7 +420,7 @@ td:first-child {
     padding-top: 80px;
   }
   .nav-item {
-    margin: 16px 0;
+    margin: 1.6rem 0;
   }
   .bars {
     display: inline-block;
@@ -445,23 +436,12 @@ td:first-child {
     color: #120e0e;
   }
   /* Hero */
-  .hero-heading {
-    font-size: 36px;
-  }
-  .hero-subheading {
-    font-size: 16px;
-  }
   /* Col */
   .col,
   .about-col {
     width: 100%;
   }
   .about-col {
-    padding: 16px 0;
-  }
-  /* Table */
-  th,
-  td {
-    font-size: 14px;
+    padding: 1.6rem 0;
   }
 }
